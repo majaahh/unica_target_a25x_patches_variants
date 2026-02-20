@@ -21,8 +21,6 @@ on early-init && property:ro.boot.em.model=SM-A256B
     mount none /vendor/firmware/SM-A256B/os.checked.bin /vendor/firmware/os.checked.bin bind
     mount none /vendor/firmware/SM-A256B/vts.bin /vendor/firmware/vts.bin bind
     mount none /vendor/firmware/SM-A256B/calliope_sram.bin /vendor/firmware/calliope_sram.bin bind
-    # TEEgris
-    mount none /vendor/tee_SM-A256B /vendor/tee bind
 
 # a25xdxx (swa_open)
 on early-init && property:ro.boot.em.model=SM-A256E
@@ -34,6 +32,8 @@ on early-init && property:ro.boot.em.model=SM-A256E
     mount none /vendor/firmware/SM-A256E/os.checked.bin /vendor/firmware/os.checked.bin bind
     mount none /vendor/firmware/SM-A256E/vts.bin /vendor/firmware/vts.bin bind
     mount none /vendor/firmware/SM-A256E/calliope_sram.bin /vendor/firmware/calliope_sram.bin bind
+    # TEEgris
+    mount none /vendor/tee_SM-A256E /vendor/tee bind
 
 on boot
     restart audioserver
