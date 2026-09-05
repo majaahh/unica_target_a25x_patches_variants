@@ -37,3 +37,6 @@ on early-init && property:ro.boot.em.model=SM-A256E
 
 on boot
     restart audioserver
+
+on property:sys.boot_completed=1
+    restart audioserver
